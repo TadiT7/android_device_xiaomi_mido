@@ -17,16 +17,12 @@
 $(call inherit-product, device/xiaomi/mido/full_mido.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
+$(call inherit-product, vendor/slim/config/common_full_phone.mk)
 
-PRODUCT_NAME := xenonhd_mido
+PRODUCT_NAME := slim_mido
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.xenonhd.maintainer=dadi11 \
-    ro.xenonhd.donate="https://www.paypal.me/dadi11"
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT="xiaomi/mido/mido:7.0/NRD90M/V9.0.5.0.NCFMIEI:user/release-keys" \
